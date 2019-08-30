@@ -18,7 +18,7 @@ You can try it first with a `virtualbox`
 ### With git
 - Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
 - Get list of packages and install git: `pacman -Sy git`
-- get the script: `git clone git://github.com/helmuthdu/aui`
+- get the script: `git clone git://github.com/adriandarfer/aui`
 
 ### Without git
 - Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
