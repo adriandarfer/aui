@@ -625,6 +625,8 @@ configure_mkinitcpio(){
     arch_chroot "mkinitcpio -p linux-hardened"
   elif [ "$(arch-chroot ${MOUNTPOINT} ls /boot | grep lts -c)" -gt "0" ]; then
     arch_chroot "mkinitcpio -p linux-lts"
+  elif [ "$(arch-chroot ${MOUNTPOINT} ls /boot | grep zen -c)" -gt "0" ]; then
+    arch_chroot "mkinitcpio -p linux-zen"
   else
     arch_chroot "mkinitcpio -p linux"
   fi
